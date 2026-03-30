@@ -1,1 +1,0 @@
-# 16739-anonymous-table-figs
