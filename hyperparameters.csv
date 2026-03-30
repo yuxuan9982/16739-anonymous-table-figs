@@ -1,0 +1,69 @@
+RQ,Method,Hyperparameter,Value,Description
+RQ1,CFlower,subtb_lambda,1,SubTB trajectory weighting (lambda)
+RQ1,CFlower,pf_temp_high,2,High temperature for policy forward
+RQ1,CFlower,pf_temp_low,0.5,Low temperature for policy forward
+RQ1,CFlower,pf_temp_prob,0.666,Probability of using high temperature
+RQ1,CFlower,use_buffer_prob,0,Replay buffer usage probability
+RQ1,CFlower,lr,1e-5,Learning rate
+RQ1,CFlower,batch_size,4,Per-device batch size
+RQ1,CFlower,accumulate_grad_batches,16,Gradient accumulation steps
+RQ1,CFlower,epochs,50,Training epochs
+RQ1,CFlower,use_4bit,FALSE,4-bit quantization
+RQ1,CFlower,threshold,0.05,Reward threshold
+RQ1,CFlower,min_sentence_len,1,Minimum generation length
+RQ1,CFlower,max_sentence_len,25,Maximum generation length
+RQ1,CFlower,every_n_epochs,50,Checkpoint save frequency
+RQ1,CFlower,patience,5,Early stopping patience
+RQ1,CFlower,seed,27,Random seed
+RQ1,CFlower,discount_factor,0.9,Reward discount factor
+RQ1,CFlower,lr_warmup_steps,20,LR warmup steps
+RQ1,CFlower,batch_size,32,Global batch size
+RQ1,CFlower,micro_batch_size,4,Per-device batch size
+RQ1,PPO,learning_rate,1e-7,Learning rate
+RQ1,PPO,batch_size,4,Batch size
+RQ1,PPO,ppo_epochs,1,PPO inner epochs
+RQ1,PPO,gradient_accumulation_steps,1,Gradient accumulation steps
+RQ1,PPO,mini_batch_size,2,PPO mini-batch size
+RQ1,PPO,target_kl,0.1,KL divergence target
+RQ1,PPO,init_kl_coef,0.9,Initial KL coefficient
+RQ1,PPO,kl_penalty,abs,KL penalty type
+RQ1,PPO,adap_kl_ctrl,TRUE,Adaptive KL control
+RQ1,PPO,num_samples_per_batch,32,Samples per batch
+RQ1,PPO,max_new_tokens,15,Max generation tokens
+RQ1,DPO,batch_size,1,Batch size
+RQ1,DPO,micro_batch_size,1,Per-device batch size
+RQ1,DPO,num_epochs,1,Training epochs
+RQ1,DPO,learning_rate,1e-6,Learning rate
+RQ2,CFlower,batch_size,256,Global batch size
+RQ2,CFlower,micro_batch_size,16,Per-device batch size
+RQ2,CFlower,num_epochs,7,Training epochs
+RQ2,CFlower,learning_rate,3e-4,Learning rate
+RQ2,CFlower,cutoff_len,512,Max sequence length
+RQ2,CFlower,train_on_inputs,TRUE,Train on input tokens
+RQ2,CFlower,group_by_length,FALSE,Group samples by length
+RQ2,CFlower,temperature,1,Sampling temperature
+RQ2,CFlower,batch_size,256,Global batch size
+RQ2,CFlower,micro_batch_size,8,Per-device batch size
+RQ2,CFlower,num_epochs,7,Training epochs
+RQ2,CFlower,learning_rate,3e-4,Learning rate
+RQ2,CFlower,cutoff_len,512,Max sequence length
+RQ2,CFlower,min_sentence_len,1,Minimum generation length
+RQ2,CFlower,max_sentence_len,20,Maximum generation length
+RQ2,CFlower,temperature,1,Sampling temperature
+RQ2,CFlower,gfn_theta (alpha),0.995,GFN alpha parameter
+RQ2,CFlower,train_theta,0.999,EMA decay for target model
+RQ2,CFlower,warmup_steps,20,LR warmup steps
+RQ2,CFlower,subtb_lambda,0.9,SubTB lambda
+RQ3,DPO,batch_size,1,Batch size
+RQ3,DPO,micro_batch_size,1,Per-device batch size
+RQ3,DPO,num_epochs,1,Training epochs
+RQ3,DPO,learning_rate,1e-6,Learning rate
+RQ3,DPO,cutoff_len,512,Max sequence length
+RQ3,DPO,beta,0.3,DPO beta parameter
+RQ3,DPO,seed,66,Random seed
+RQ3,DPO,warmup_steps,20,LR warmup steps
+RQ3,DPO,temperature,1,Sampling temperature
+RQ3,PPO,learning_rate,1e-7,Learning rate
+RQ3,PPO,batch_size,4,Batch size
+RQ3,PPO,mini_batch_size,2,PPO mini-batch size
+RQ3,PPO,temperature,1,Sampling temperature
